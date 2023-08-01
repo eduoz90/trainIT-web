@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+body{
+  background: #800080;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+ 
+}

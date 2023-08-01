@@ -1,0 +1,207 @@
+.title{
+   
+    font-weight: 700;
+    text-transform: uppercase;
+
+    
+}
+
+.hamburger-m{
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+
+
+.chevron{
+   
+    width: 15px;
+    height: 15px;
+}
+
+.imagen{
+    margin: 10px;
+}
+
+ span{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2em;
+   
+}
+
+
+
+.logo{
+    margin: 10px;
+}
+
+h3{
+    color: #fff;
+}
+
+.container-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.imagen{
+    width: 50px;
+    height: 50px;
+}
+
+.hamburger{
+    width: 25px;
+    height: 25px;
+    
+}
+
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(41,128,185, 0.7);
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+
+.menu ul{
+    list-style: none;
+}
+
+.header .menu ul li{
+    float: left;
+    position: relative;
+}
+
+.header .menu ul li a{
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 8px;
+    transition: all .2s ease;
+}
+
+.header .menu ul li a:hover{
+    background: #333;
+}
+
+.header .menu ul li ul{
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: rgba(141, 128,185, 0.7);
+    display: none;
+    border-radius: 8px;
+}
+
+.header  .menu ul li ul li a{
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.header  .menu ul li ul li ul{
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+
+
+.header  .menu ul li ul li{
+    width: 100%;
+}
+
+.header  .menu ul li:hover > ul{
+    display: initial;
+}
+
+
+
+#toggle,
+.header label{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media(max-width:768px){
+   
+    .header label{
+        display: initial;
+    }
+
+    .hamburger-m {
+        position: absolute;
+        top: 12px;
+        right: 30px;
+        font-size: 30px;
+        display: block;
+
+    }
+
+
+    .header .menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(230, 235, 238, 0.7);
+        display: none;
+    }
+  
+
+    .header .menu ul li{
+        width: 100%;
+
+    }
+
+    .header .menu ul li ul li{
+        display: flex;
+        justify-content: left;
+      
+    }
+
+
+    .header .menu ul li a{
+        padding: 8px 30px 8px 10%;
+    }
+
+    .header .menu ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+  
+   
+
+    .menu ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #toggle:checked ~ .menu {
+        display: block;
+    }
+
+}
